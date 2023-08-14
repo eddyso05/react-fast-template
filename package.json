@@ -1,14 +1,16 @@
 {
-  "name": "react-generator",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "react-fast-template",
+  "version": "1.1.0",
+  "description": "A quick generate react component template",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "react-generator": "./main.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "main": "bin/react-fast-template",
+  "bin": {
+    "generate-react": "bin/react-fast-template.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "eddy siow",
   "license": "ISC",
   "dependencies": {
     "commander": "^11.0.0"
