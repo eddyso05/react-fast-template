@@ -1,7 +1,9 @@
 #!/usr/bin/env node
-import { ComponentCommand } from "./commander";
+import { ComponentCommand } from "./commands/index.js";
+import { createRequire } from "module";
 
 export default async function main(args) {
+  const localRequire = createRequire(import.meta.url);
   const pkg = localRequire("../package.json");
 
   // init dotenv
@@ -9,8 +11,10 @@ export default async function main(args) {
 
   // Initialize generate component command
 
-  const program = ComponentCommand(args, cliConfigFile, program);
+  const program = ComponentCommand(args);
 
   program.version(pkg.version);
   program.parse(args);
 }
+
+main(process.argv);

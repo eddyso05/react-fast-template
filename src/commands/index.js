@@ -1,7 +1,7 @@
-import program from "commander";
-import { generateComponent } from "./createComponent";
+import { program } from "commander";
+import { generateComponent } from "./createComponent.js";
 
-export default function ComponentCommand(args) {
+export function ComponentCommand(args) {
   program
     .option("-c, --component <name>", "Generate a component")
     // .option("-a, --add <name>", "Add a component")

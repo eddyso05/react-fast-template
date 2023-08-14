@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const fse = require("fs-extra");
+import fs from "fs";
+import path from "path";
+import fse from "fs-extra";
 
 export function generateComponent(program) {
   console.log("Starting Generate Component: " + program.opts().component);

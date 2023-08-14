@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import cli from "../main.js";
+import main from "../src/index.js";
 
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
@@ -25,4 +25,4 @@ if (isNotValidNodeVersion()) {
   process.exit(1);
 }
 
-cli(process.argv);
+main(process.argv);
