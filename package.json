@@ -5,9 +5,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "main": "bin/react-fast-template",
+  "main": "bin/react-create",
   "bin": {
-    "generate-react": "bin/react-fast-template.js"
+    "react-create": "bin/react-create.js"
   },
   "keywords": [],
   "author": "eddy siow",
