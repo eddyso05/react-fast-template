@@ -2,11 +2,20 @@ import fs from "fs";
 import path from "path";
 import fse from "fs-extra";
 
+const getCurrentModuleDirectory = () => {
+  const __filename = new URL(import.meta.url).pathname;
+  return path.dirname(__filename);
+};
+
 export function generateComponent(program) {
   console.log("Starting Generate Component: " + program.opts().component);
   const componentName = program.opts().component;
 
-  const sourceDirectory = path.join(__dirname, "template", componentName); // Adjust the source path as needed
+  const sourceDirectory = path.join(
+    getCurrentModuleDirectory(),
+    "template",
+    componentName
+  ); // Adjust the source path as needed
   const destinationDirectory = path.join(process.cwd(), componentName);
 
   if (!fs.existsSync(sourceDirectory)) {
