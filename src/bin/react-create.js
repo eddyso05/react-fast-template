@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import cli from "../src/main.js";
+import cli from "../main.js";
 
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
