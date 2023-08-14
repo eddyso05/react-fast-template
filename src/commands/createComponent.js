@@ -13,7 +13,7 @@ export function generateComponent(program) {
 
   const sourceDirectory = path.join(
     getCurrentModuleDirectory(),
-    "template",
+    "components",
     componentName
   ); // Adjust the source path as needed
   const destinationDirectory = path.join(process.cwd(), componentName);
