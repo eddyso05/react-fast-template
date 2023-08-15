@@ -1,11 +1,13 @@
 {
-  "web": {
-    "client_id": "595666651794-uhhj7ps7kfs608ssptterqok49s613gr.apps.googleusercontent.com",
-    "project_id": "react-fast-template",
-    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-    "token_uri": "https://oauth2.googleapis.com/token",
-    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-    "client_secret": "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",
-    "redirect_uris": ["https://developers.google.com/oauthplayground"]
-  }
+  "type": "service_account",
+  "project_id": "react-fast-template",
+  "private_key_id": "7671b36d40f852f68a5b1fb12132a77e75609fc7",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQC2CLa5box3jjTU\nXxpXA0ZvyQxZyCHjYrF0yLz2rg3DREkNQGkzwHl3HK7Hxt9zl/94Z+ePedEcG6HB\nZAGIrV66dE1bHDhbG3vGIr0BKdoIIkhLNztlhLccx5Kx/YX33Y6agS0NTeqNO1zr\nxGgZgv/V2FcP6JincxKIzzmlfImmKTN3qk5P3pEAksK2qM29zTMpePUPw0N/wjfi\nDpGJoW515zc0m9vuY2YYUut6TNYV5IWJp6f4qb6PNsAViWvEiWVRXnDJtX6iyWKx\n50T4h1QPDBFanXBMwK8tcPp4L5ZjhsjPMgGGCcxcKNN+r9w9bpjjSofGz7YPJSd2\n0DxSkOBzAgMBAAECggEACTMHiPd9Qc19/f2QZzVTKfMPHLpwe/1Q2oYKhqzlJSke\nR/0pU+Q2Pz7D1nTGdiEIWB1oJmgRmUoMMqnLKg0Y7HNUNXaHopMQ/kJjKtvimOai\noKp55fd/CYVMdJJLYutfeY9tp254nAqT95ZFbISiSTxVqggnLs8x8JgIYcSZcDwu\nsUPGZivLueYwtPR1E0PjUyP1Hq+68RYq6EjTFBPZkdM9kJkQTjgJIfgoUqfpk1Yq\nLJpNAsERSGgwRdCnkyhXi9xhCw/nxnyvM0tJ55w7zYq6cpQqolBNygyf/SLD5l1F\nuP5RJobsOQqznG31VpT5YuBQzsncWnTMFyVf6A0sAQKBgQD+MEUoy4IAlv9jULGW\njqRug1hJyH89hHZI4L50L1UfyFCuuB39Yegxl467niPxUk7JCzN8zk7CvSG08PEp\nD4LGwtLLIhR6sBnhLg803wkuEX2wa0L51ympaH7gXeHXXuUyqy/OLwYLmU/MYkyI\nzgF8rIWpVuO7VE5ncJrtCYfboQKBgQC3VM7pYsz1YgHbce8FHmOfARTmb7PR+fli\nI6cLCpzgK/rBFBhjjRLAtxUDvTlDHx80Pcx4EcUHdJizfZEKwqLa1LweRxeFTxgv\n5LvVv/mOWwqrWJTNw+TteLN9ha9d2UFs2EG5xHVRdaLe/ByyT7YUL9Xl7T36ZWqm\nXebZ/w7jkwKBgG0jdp5kesYcDz2qSQXW6x0UQhU0BAX62PrDnKKwLAGAdbv/C8le\nf17DryI5bT9RUsiZiZrdzg1pPY6+IR27LjB/OBjF4jsnX4VCzH6sAPoJwoi8FT7G\ntnmph0h4pt5dPVW7EMSbhiH2yr97uVbH9PV98cnap98n/J4HSE3cWLvhAoGAVepn\nwVYtCT4x8p51TmfMdgKywb9NfTTx2z0sFm+VzzStIfkB6P1+8VObhJIUGNGn9PqV\nLRvewzywJ0XMSEeovHb/5gyZCD9l7WP7ZxO9pyohWOV9buTED0oGi+evpIKhN5ot\nSxq3hEJl3qw14paalOFKE6PX7NXEYk0VV8pBNwMCgYBDqAV1mjVJiZaJzkZjDwXu\nSJp8B6oMIGsUk7enQHygbCve7eInTLahCSGR+NH8xVYCG20y//hO7Jj2TLfnFtyG\npW4ZV3Jfvh1XxQhXVEOJSYgvbHU/l772dYvYCuLhJLtACpofQh1+j8L5R31ztFSt\n0NviDY61opQW26JgqXf4vg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "react-fast-template@react-fast-template.iam.gserviceaccount.com",
+  "client_id": "107803168784692626526",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/react-fast-template%40react-fast-template.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
 }

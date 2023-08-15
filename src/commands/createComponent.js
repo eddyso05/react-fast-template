@@ -1,14 +1,14 @@
 import fs from "fs";
 import path from "path";
 import fse from "fs-extra";
-import { getCurrentModuleDirectory } from "../utils/getCurrentDirectory";
+import { getCurrentModuleDirectory } from "../utils/getCurrentDirectory.js";
 
 export function generateComponent(program) {
   console.log("Starting Generate Component: " + program.opts().component);
   const componentName = program.opts().component;
 
   const sourceDirectory = path.join(
-    getCurrentModuleDirectory(),
+    getCurrentModuleDirectory(path),
     "components",
     componentName
   ); // Adjust the source path as needed
