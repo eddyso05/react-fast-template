@@ -1,0 +1,11 @@
+{
+  "web": {
+    "client_id": "595666651794-uhhj7ps7kfs608ssptterqok49s613gr.apps.googleusercontent.com",
+    "project_id": "react-fast-template",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "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",
+    "redirect_uris": ["https://developers.google.com/oauthplayground"]
+  }
+}

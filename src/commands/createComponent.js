@@ -1,11 +1,7 @@
 import fs from "fs";
 import path from "path";
 import fse from "fs-extra";
-
-const getCurrentModuleDirectory = () => {
-  const __filename = new URL(import.meta.url).pathname;
-  return path.dirname(__filename);
-};
+import { getCurrentModuleDirectory } from "../utils/getCurrentDirectory";
 
 export function generateComponent(program) {
   console.log("Starting Generate Component: " + program.opts().component);
