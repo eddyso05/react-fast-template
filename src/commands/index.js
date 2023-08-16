@@ -1,5 +1,5 @@
 import { program } from "commander";
-import { generateComponent } from "./createComponent.js";
+import { generateComponent } from "./generateComponent.js";
 import { addComponent } from "./addComponent.js";
 
 export function ComponentCommand(args) {
