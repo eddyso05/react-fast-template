@@ -4,7 +4,7 @@ import path from "path";
 import fs from "fs";
 
 // find the current path -> bin of the project that user want to save the template
-export const addComponent = () => {
+export const addComponent = (program) => {
   const sourceDirectory = path.join(process.cwd(), "bin");
 
   if (!fs.existsSync(sourceDirectory)) {
@@ -13,5 +13,5 @@ export const addComponent = () => {
   }
 
   // add the folder into cloud open source storage
-  uploadFolder(sourceDirectory);
+  uploadFolder(sourceDirectory, program.opts().add);
 };

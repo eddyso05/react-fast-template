@@ -12,7 +12,11 @@ export function generateComponent(program) {
     "components",
     componentName
   ); // Adjust the source path as needed
-  const destinationDirectory = path.join(process.cwd(), componentName);
+  const destinationDirectory = path.join(
+    process.cwd(),
+    "/template/",
+    componentName
+  );
 
   if (!fs.existsSync(sourceDirectory)) {
     console.error(`Source directory '${sourceDirectory}' not found.`);

@@ -8,10 +8,9 @@ const isNotValidNodeVersion = () => {
 
   if (major < 16) {
     console.error(
-      // eslint-disable-next-line
       "You are running Node " +
         currentNodeVersion +
-        " Generate React CLI requires Node 16 or higher. Please update your version of Node."
+        "React Fast Template requires Node 16 or higher. Please update Node Version."
     );
 
     return true;
@@ -20,7 +19,7 @@ const isNotValidNodeVersion = () => {
   return false;
 };
 
-// --- Check if user is running Node 12 or higher.
+// --- Check if user is running Node 16 or higher.
 if (isNotValidNodeVersion()) {
   process.exit(1);
 }
