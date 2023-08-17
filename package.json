@@ -1,6 +1,6 @@
 {
   "name": "react-fast-template",
-  "version": "1.2.4",
+  "version": "1.2.5",
   "type": "module",
   "description": "A quick generate react component template",
   "scripts": {

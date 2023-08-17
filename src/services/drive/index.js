@@ -55,9 +55,9 @@ const copyAndUploadToDrive = async (
     }
   } else {
     await uploadFile(sourcePath, destinationFolderId, drive);
-    const timestampFolderId = "1f-3ya2BGwauamXYodj6QqGevxrG1gmfN";
-    await createTimestampFile(timestampFolderId, drive);
   }
+  const timestampFolderId = "1f-3ya2BGwauamXYodj6QqGevxrG1gmfN";
+  await createTimestampFile(timestampFolderId, drive);
 };
 
 // Main function
