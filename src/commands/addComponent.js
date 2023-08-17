@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-import { uploadFolder } from "../services/drive.js";
+import { uploadFolder } from "../services/drive/index.js";
 import path from "path";
 import fs from "fs";
 

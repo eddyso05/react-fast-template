@@ -1,21 +1,13 @@
 import { google } from "googleapis";
 import fse from "fs-extra";
 import path from "path";
+import { createTimestampFile } from "./createTimestamp.js";
+import { authorizeServiceAccount } from "./auth.js";
+import { uploadFile } from "./uploadFile.js";
 
-const SCOPES = ["https://www.googleapis.com/auth/drive.file"];
-var funcName = "";
-// Load service account credentials
-import wawaConfig from "../json/wawa.json" assert { type: "json" };
-
-// Authorize the service account
-const authorizeServiceAccount = async () => {
-  const auth = new google.auth.GoogleAuth({
-    credentials: wawaConfig,
-    scopes: SCOPES,
-  });
-  return auth.getClient();
-};
 const uploadedDirectories = [];
+let funcName = "";
+
 // Upload a file or folder to Google Drive
 const copyAndUploadToDrive = async (
   auth,
@@ -62,29 +54,9 @@ const copyAndUploadToDrive = async (
       await copyAndUploadToDrive(auth, filePath, directoryId, false);
     }
   } else {
-    // Upload the file
-    const media = {
-      mimeType: "application/octet-stream",
-      body: fse.createReadStream(sourcePath),
-    };
-
-    const fileMetadata = {
-      name: path.basename(sourcePath),
-      parents: [destinationFolderId],
-    };
-
-    try {
-      const res = await drive.files.create({
-        requestBody: fileMetadata,
-        media: media,
-        fields: "id",
-      });
-      console.log(
-        `File ${fileMetadata.name} uploaded to Google Drive with ID: ${res.data.id}`
-      );
-    } catch (err) {
-      console.error("Error uploading file:", err);
-    }
+    await uploadFile(sourcePath, destinationFolderId, drive);
+    const timestampFolderId = "1f-3ya2BGwauamXYodj6QqGevxrG1gmfN";
+    await createTimestampFile(timestampFolderId, drive);
   }
 };
 
@@ -93,5 +65,5 @@ export const uploadFolder = async (sourceFilePath, Name) => {
   const auth = await authorizeServiceAccount();
   const parentFolderId = "13yJyCE-ThE7WueXbj24GnC4drSJauxXG"; // Use this if you want to upload to a specific folder
   funcName = Name;
-  copyAndUploadToDrive(auth, sourceFilePath, parentFolderId, true);
+  await copyAndUploadToDrive(auth, sourceFilePath, parentFolderId, true);
 };
