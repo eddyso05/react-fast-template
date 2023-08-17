@@ -11,7 +11,6 @@ export const addComponent = (program) => {
     console.error(`Source directory '${sourceDirectory}' not found.`);
     return;
   }
-
   // add the folder into cloud open source storage
   uploadFolder(sourceDirectory, program.opts().add);
 };

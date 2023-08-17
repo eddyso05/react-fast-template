@@ -32,9 +32,7 @@ export const replaceFileByName = async (
         fields: "id",
       });
 
-      console.log(
-        `File ${fileMetadata.name} replaced on Google Drive with ID: ${existingFile.id}`
-      );
+      console.log(`File ${fileMetadata.name} replaced`);
       return true;
     } else {
       console.error(`File ${fileName} not found in the specified folder.`);

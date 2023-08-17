@@ -10,5 +10,3 @@ export default async function main(args) {
   program.version(pkg.version);
   program.parse(args);
 }
-
-main(process.argv);
