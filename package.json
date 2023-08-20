@@ -14,7 +14,6 @@
   "author": "eddy siow",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.4.0",
     "child_process": "^1.0.2",
     "commander": "^11.0.0",
     "fs-extra": "^11.1.1",
